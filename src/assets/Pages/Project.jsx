@@ -8,9 +8,9 @@ const demoItems = [
 ];
 const Project = () => {
     return (
-        <div className="bg-[#120F17] h-screen">
-            <div className="p-10">
-                 <h1 className="text-white text-5xl font-bold mb-6 font-light">Selected Projects</h1>
+        <div className="bg-[#120F17] h-screen w-full overflow-x-hidden">
+            <div className="p-4 sm:p-6 md:p-10">
+                 <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-6 font-light text-center break-words">Selected Projects</h1>
             </div>
            
             

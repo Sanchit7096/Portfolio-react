@@ -1,8 +1,8 @@
 const About = () => {
     return (
-        <div className="bg-[#fffbeb] min-h-[50vh] flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 py-12">
-            <div className="max-w-7xl mx-auto mb-12">
-                <p className="text-3xl sm:text-4xl md:text-4xl lg:text-6xl text-center  font-light">
+        <div className="bg-[#fffbeb] min-h-[50vh] flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 py-12 w-full overflow-x-hidden">
+            <div className="max-w-7xl mx-auto mb-12 w-full">
+                <p className="text-3xl sm:text-4xl md:text-4xl lg:text-6xl text-center  font-light break-words">
                     Transforming ideas into seamless digital experiences                </p>
             </div>
 

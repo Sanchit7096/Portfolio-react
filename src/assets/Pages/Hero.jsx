@@ -15,11 +15,11 @@ const Hero = () => {
       />
 
       {/* Content */}
-      <div className="absolute inset-0 z-10 flex flex-col items-start justify-center mt-12 sm:mt-16 md:mt-20 ml-4 sm:ml-8 md:ml-12 lg:ml-20 px-4">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white">
+      <div className="absolute inset-0 z-10 flex flex-col items-start justify-center mt-12 sm:mt-16 md:mt-20 ml-4 sm:ml-8 md:ml-12 lg:ml-20 px-4 w-full">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white break-words">
           Sanchit Chaurasiya
         </h1>
-        <p className="text-base sm:text-lg md:text-xl text-white mt-3 sm:mt-4 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl xl:max-w-2xl">
+        <p className="text-base sm:text-lg md:text-xl text-white mt-3 sm:mt-4 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl xl:max-w-2xl break-words">
           Building modern web applications with React, Node.js, and JavaScript. Passionate about creating clean, scalable, and user-focused digital experiences.
         </p>
         <button className="bg-white text-black px-4 py-2 rounded-lg mt-4">
