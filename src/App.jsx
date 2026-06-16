@@ -10,12 +10,12 @@ const App = () => {
   return (
     <div className="overflow-x-hidden">
       <SmoothScroll />
-      <Hero/>
-      <About/>
-      <Stack/>
-      <Experience/>
-      <Project/>
-      <Footer/>
+      <Hero />
+      <About />
+      <Stack />
+      <Experience />
+      <Project />
+      <Footer />
     </div>
   )
 }
