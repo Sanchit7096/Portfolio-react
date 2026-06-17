@@ -1,5 +1,5 @@
 import Background from '../Components/Background'
-import resume from '../Sanchit chaurasiya.pdf'
+import resume from '../Sanchit_Chaurasiya.pdf'
 import CrazyButton from '../Components/CrazyButton'
 
 const Hero = () => {
