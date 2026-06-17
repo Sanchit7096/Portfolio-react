@@ -138,7 +138,7 @@ function MenuItem({ link, text, image, speed, textColor, marqueeBgColor, marquee
             <div className="marquee-part flex items-center flex-shrink-0" key={idx} style={{ color: marqueeTextColor }}>
               <span className="whitespace-nowrap uppercase font-normal text-[4vh] leading-[1] px-[1vw]">{text}</span>
               <div
-                className="w-[200px] h-[7vh] my-[2em] mx-[2vw] py-[1em] rounded-[50px] bg-cover bg-center"
+                className="w-[250px] h-[12vh] my-[2em] mx-[2vw] py-[1em] rounded-[10px] bg-cover bg-contain bg-center bg-no-repeat "
                 style={{ backgroundImage: `url(${image})` }}
               />
             </div>
