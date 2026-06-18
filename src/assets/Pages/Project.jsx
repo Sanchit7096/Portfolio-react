@@ -1,13 +1,13 @@
 
 import FlowingMenu from "../Components/FlowingMenu";
-import image from "../Images/FitLab.png"
-import image2 from "../Images/SkillNavigator.png"
-import image3 from "../Images/chatbot.png"
+import Image1 from "../Images/FitLab.png"
+import Image2 from "../Images/Skillnavigator.png"
+import Image3 from "../Images/Chatbot.png"
 
 const demoItems = [
-  { link: '#', text: 'Skill Navigator', image: image2 },
-  { link: '#', text: 'Fit-lab', image: image },
-  { link: '#', text: 'Ai-chatBot', image: image3 },
+  { link: '#', text: 'Skill Navigator', image: Image2 },
+  { link: '#', text: 'Fit-lab', image: Image1 },
+  { link: '#', text: 'Ai-chatBot', image: Image3 },
 ];
 const Project = () => {
   return (
