@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
+import { Link } from 'react-router-dom';
 
 function FlowingMenu({
   items = [],
@@ -119,15 +120,15 @@ function MenuItem({ link, text, image, speed, textColor, marqueeBgColor, marquee
       ref={itemRef}
       style={{ borderTop: isFirst ? 'none' : `1px solid ${borderColor}` }}
     >
-      <a
+      <Link
         className="flex items-center justify-center h-full relative cursor-pointer uppercase no-underline font-semibold text-[4vh]"
-        href={link}
+        to={link}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         style={{ color: textColor }}
       >
         {text}
-      </a>
+      </Link>
       <div
         className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none translate-y-[101%]"
         ref={marqueeRef}

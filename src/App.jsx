@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+
 import Hero from './assets/Pages/Hero'
 import About from './assets/Pages/About'
 import Project from './assets/Pages/Project'
@@ -8,34 +9,77 @@ import Experience from './assets/Pages/Experience'
 import SmoothScroll from './assets/Components/SmoothScroll'
 import Preloader from './assets/Components/Preloader'
 
+
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true)
+
+  const [isLoading, setIsLoading] = useState(false)
+
+
+  useEffect(() => {
+
+    const alreadyLoaded = sessionStorage.getItem("preloaderDone")
+
+
+    if (!alreadyLoaded) {
+
+      setIsLoading(true)
+
+    }
+
+  }, [])
+
+
+
+  const handlePreloaderComplete = () => {
+
+    sessionStorage.setItem("preloaderDone", "true")
+
+    setIsLoading(false)
+
+  }
+
+
 
   return (
     <>
-      {/* Preloader — sits on top, unmounts when animation ends */}
+
       {isLoading && (
-        <Preloader onComplete={() => setIsLoading(false)} />
+        <Preloader 
+          onComplete={handlePreloaderComplete} 
+        />
       )}
 
-      {/* Main site — fades + slides up once preloader is gone */}
+
       <div
         className="overflow-x-hidden transition-all duration-700 ease-out"
+
         style={{
           opacity: isLoading ? 0 : 1,
-          transform: isLoading ? 'translateY(18px)' : 'translateY(0px)',
+          transform: isLoading 
+            ? 'translateY(18px)' 
+            : 'translateY(0px)',
         }}
       >
+
         <SmoothScroll />
+
         <Hero />
+
         <About />
+
         <Stack />
+
         <Experience />
+
         <Project />
+
         <Footer />
+
       </div>
+
     </>
   )
 }
+
 
 export default App

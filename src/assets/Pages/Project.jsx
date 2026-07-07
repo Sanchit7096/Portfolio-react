@@ -5,13 +5,13 @@ import Image2 from "../Images/Skillnavigator.png"
 import Image3 from "../Images/Chatbot.png"
 
 const demoItems = [
-  { link: '#', text: 'Skill Navigator', image: Image2 },
-  { link: '#', text: 'Fit-lab', image: Image1 },
-  { link: '#', text: 'Ai-chatBot', image: Image3 },
+  { link: '/project/Skillnavigator', text: 'Skill Navigator', image: Image2 },
+  { link: '/project/FitLab', text: 'Fit-lab', image: Image1 },
+  { link: '/project/AiChatBot', text: 'Ai-chatBot', image: Image3 },
 ];
 const Project = () => {
   return (
-    <div className="bg-[#120F17] h-[80vh] w-full overflow-x-hidden">
+    <div id="projects" className="bg-[#120F17] h-[80vh] w-full overflow-x-hidden">
       <div className="p-4 sm:p-6 md:p-10">
         <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-6 font-light   break-words">Selected Projects</h1>
       </div>
