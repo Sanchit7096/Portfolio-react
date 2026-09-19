@@ -4,13 +4,23 @@ import { motion } from 'framer-motion'
 const Experience = () => {
   const experiences = [
     {
+      id: 2,
+      title: "Freelance Frontend Developer",
+      company: "Dexton Technology",
+      period: "May 2026 – Present",
+      description: "Production business website developed for Dexton Technology; implemented responsive layouts, reusable components, interactive sections, animations, and Cloudinary-based media management. Developed and deployed GraphicX Studio, a production business website using React.js, Tailwind CSS, JavaScript, and GSAP. Built responsive UI, reusable React components, animations, interactive sections, and mobile-friendly layouts. Integrated Cloudinary for image hosting and media management to support production website assets. Contributed to frontend development, debugging, bug fixing, responsiveness improvements, and feature enhancements. Currently developing DK Computer, an e-commerce platform for pre-built PCs using React.js, Tailwind CSS, Node.js, Express.js, and MongoDB with WhatsApp-based checkout.",
+      technologies: ["React.js", "Tailwind CSS", "JavaScript", "GSAP", "Cloudinary", "Git", "GitHub"],
+      project: "GraphicX Studio",
+      link: "https://graphicxstudio.com/"
+    },
+    {
       id: 1,
       title: "React.js Intern",
       company: "INAI Worlds Private Limited",
       period: "Feb 2026 – May 2026",
-      description: "Developed an immersive, high-impact landing page for Miraai – India's first AI-powered video production service. Authored the entire frontend layer, focusing on advanced GSAP timelines to animate product galleries, value proposition sections, and dynamic creative assets. Implemented 8px spacing systems for a professional look. Managed source code using Git and GitHub version control workflows. Participated in debugging, testing, and feature enhancement activities.",
+      description: "Developed frontend features for Miraai, an AI-powered video production platform using React.js and Tailwind CSS. Built responsive and reusable React components for interactive product sections. Implemented GSAP, ScrollTrigger, and Lenis animations to improve user interaction and visual experience. Contributed to debugging, testing, bug fixing, and frontend feature enhancements.",
       technologies: ["React.js", "Tailwind CSS", "GSAP", "ScrollTrigger", "Lenis", "Git", "GitHub"],
-      project: "Miraai – AI Production Platform Landing Page",
+      project: "Miraai – AI Production Platform",
       link: "https://miraai.inaiverse.com/"
     }
   ]

@@ -1,13 +1,15 @@
 
 import FlowingMenu from "../Components/FlowingMenu";
-import Image1 from "../Images/FitLab.png"
+import Image1 from "../Images/GraphicXStudio.png"
 import Image2 from "../Images/Skillnavigator.png"
 import Image3 from "../Images/Chatbot.png"
+import Image4 from "../Images/DKComputer.png"
 
 const demoItems = [
+  { link: '/project/GraphicXStudio', text: 'GraphicX Studio', image: Image1 },
+  { link: '/project/DKComputer', text: 'DK Computer', image: Image4 },
+  { link: '/project/AiChatBot', text: 'AI Chat Assistant', image: Image3 },
   { link: '/project/Skillnavigator', text: 'Skill Navigator', image: Image2 },
-  { link: '/project/FitLab', text: 'Fit-lab', image: Image1 },
-  { link: '/project/AiChatBot', text: 'Ai-chatBot', image: Image3 },
 ];
 const Project = () => {
   return (

@@ -10,11 +10,11 @@ const features = [
 ];
 
 const roles = [
-  'Designed and developed the entire platform using HTML, CSS, and JavaScript.',
-  'Created dynamic roadmaps for different skills using JSON data.',
-  'Integrated curated YouTube videos to provide the best learning resources.',
+  'Developed a web application that helps users discover skills and visualize structured learning roadmaps.',
+  'Integrated Firebase Authentication for user login and registration.',
+  'Implemented dynamic roadmap generation and YouTube learning resource recommendations.',
+  'Designed and developed the entire platform using HTML, CSS, JavaScript, and Firebase.',
   'Focused on responsive design for a smooth experience across devices.',
-  'Ensured a user-friendly interface to make skill discovery and learning seamless.',
 ];
 
 const SkillNavigator = () => {

@@ -30,14 +30,14 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 , delay: 0.4 }}
                 viewport={{ once: true }}
-                
-                
+
+
                 className="md:w-2/3 md:pl-12">
                     <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed mb-4">
-                        Hi, I'm a Frontend Web Developer passionate about building clean and user-friendly websites. I enjoy turning ideas into interactive and responsive designs that work smoothly on all devices.
+                        Frontend Developer with hands-on experience building responsive production websites and web applications using React.js, JavaScript, Tailwind CSS, GSAP, REST APIs, and modern frontend technologies. Experienced in reusable components, responsive UI, animations, API integration, debugging, Git/GitHub, deployment, and cloud-based media management.
                     </p>
                     <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
-                        Even as a fresher, I focus on writing clean code, creating accessible layouts, and improving performance to offer better user experiences. I'm always learning new technologies and growing my skills to build websites that not only look great but also solve real-world problems.
+                        B.Tech in Computer Engineering — Bhagwan Mahavir University, Surat | CGPA: 7.77 / 10 | May 2026 – Present | 2022 – 2026
                     </p>
                 </motion.div>
             </div>

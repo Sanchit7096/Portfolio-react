@@ -3,17 +3,16 @@ import { Link } from 'react-router-dom';
 import AichatbotImg from '../Images/Chatbot.png';
 
 const features = [
-  'Ai Chatbot for Personalized Conversations',
-  'User can ask queries and get instant responses',
-  'Integration with gemini API ',
-  
+  'AI-powered chatbot for real-time conversational responses',
+  'User can ask queries and get instant intelligent responses',
+  'Integration with Gemini API for intelligent query processing',
 ];
 
 const roles = [
- ' Designed and built the frontend of the website using React.js',
- 'Used gemini api to get instant responses to user queries.',
- 'Manages State and actions.',
- 'Currently working on improving the chatbot with more features and better responses.',
+  'Developed an AI-powered chatbot capable of generating real-time conversational responses.',
+  'Integrated Gemini API to process user queries and return intelligent responses.',
+  'Built reusable React components and managed application state using React Hooks.',
+  'Designed and built the frontend using React.js and Tailwind CSS.',
 ];
 
 const AiChatBot = () => {
@@ -30,9 +29,9 @@ const AiChatBot = () => {
 
         <header className="space-y-4">
           <p className="text-sm uppercase tracking-[0.3em] text-gray-400">Project • 2026</p>
-          <h1 className="text-4xl font-light sm:text-5xl lg:text-6xl">Ai ChatBot</h1>
+          <h1 className="text-4xl font-light sm:text-5xl lg:text-6xl">AI Chat Assistant</h1>
           <p className="max-w-3xl text-lg leading-8 text-gray-300">
-            Ai ChatBot is a modern AI-powered chatbot that provides users with instant responses to their queries. Users can interact with the chatbot to get personalized assistance and information.
+            AI Chat Assistant is an AI-powered chatbot that generates real-time conversational responses. Users can interact with the chatbot to get intelligent responses to their queries using Gemini API integration.
           </p>
         </header>
 

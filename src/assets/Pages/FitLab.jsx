@@ -72,7 +72,7 @@ const FitLab = () => {
           </div>
         </section>
 
-        <section className=" flex flex-col justify-center items-center p-6 sm:p-8">
+        <section className="rounded-3xl border flex flex-col justify-center items-center p-6 sm:p-8">
           <h2 className="mb-3 text-2xl font-light">Have a project in mind?</h2>
           <a
             href="mailto:Sanchitchaurasiya90@gmail.com"

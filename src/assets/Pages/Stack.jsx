@@ -6,34 +6,44 @@ const Stack = () => {
       <div className="max-w-7xl mx-auto">
         <h1 className='text-black text-5xl font-light mb-16'>My Skills ...</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Card 1: Frontend Development */}
           <div>
             <p className="text-gray-400 text-lg mb-2">01</p>
             <div className="border-b border-gray-300 mb-6"></div>
-            <h2 className="text-4xl font-light text-black mb-4">Frontend Development</h2>
-            <p className="text-gray-600 leading-relaxed">
-              Building responsive, interactive, and scalable web applications using React, JavaScript, and Tailwind CSS. Focused on creating clean, maintainable code and delivering seamless user experiences across devices. Passionate about transforming ideas into modern, high-performance web solutions.
+            <h2 className="text-4xl font-light text-black mb-4">Frontend</h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              React.js, JavaScript, HTML5, CSS3, Tailwind CSS, Responsive Design, React Hooks, Reusable Components, REST API Integration
             </p>
           </div>
 
-          {/* Card 2: UI Engineering */}
+          {/* Card 2: Backend Basic */}
           <div>
             <p className="text-gray-400 text-lg mb-2">02</p>
             <div className="border-b border-gray-300 mb-6"></div>
-            <h2 className="text-4xl font-light text-black mb-4">UI Engineering</h2>
-            <p className="text-gray-600 leading-relaxed">
-              Creating accessible and user-centered interfaces with a strong emphasis on usability, performance, and responsiveness. Experienced in optimizing web applications for speed, accessibility, and smooth interactions. Dedicated to designing intuitive digital experiences that enhance user engagement and satisfaction.
+            <h2 className="text-4xl font-light text-black mb-4">Backend Basic</h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Node.js, Express.js, MongoDB
             </p>
           </div>
 
-          {/* Card 3: Tools & Collaboration */}
+          {/* Card 3: Animation & Media */}
           <div>
             <p className="text-gray-400 text-lg mb-2">03</p>
             <div className="border-b border-gray-300 mb-6"></div>
-            <h2 className="text-4xl font-light text-black mb-4">Tools & Collaboration</h2>
-            <p className="text-gray-600 leading-relaxed">
-              Developing fast and reliable AI-powered applications by integrating LLMs and modern AI technologies into web products. Proficient with Git, GitHub, VS Code, Antigravity, Windsurf, and Figma to streamline development, collaboration, and design workflows. Continuously exploring emerging technologies to build innovative and efficient solutions.
+            <h2 className="text-4xl font-light text-black mb-4">Animation & Media</h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              GSAP, ScrollTrigger, Lenis, Cloudinary
+            </p>
+          </div>
+
+          {/* Card 4: Tools */}
+          <div>
+            <p className="text-gray-400 text-lg mb-2">04</p>
+            <div className="border-b border-gray-300 mb-6"></div>
+            <h2 className="text-4xl font-light text-black mb-4">Tools</h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Git, GitHub, VSCode, Postman, Vercel, MongoDB Compass, Prompt Engineering (Antigravity, Claude)
             </p>
           </div>
         </div>
