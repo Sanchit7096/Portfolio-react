@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import SkillNavigatorImage from '../Images/Skillnavigator.png';
 
@@ -19,13 +18,13 @@ const roles = [
 
 const SkillNavigator = () => {
   return (
-    <div className="min-h-screen bg-[#120F17] text-white px-4 py-8 sm:px-6 md:px-10 lg:px-16">
+    <div className="min-h-screen bg-[#120F17] text-white px-4 py-8 sm:px-6 md:px-10 lg:px-16 animate-fadeIn">
       <div className="mx-auto flex max-w-6xl flex-col gap-10">
         <Link
           to="/#projects"
-          className="inline-flex w-fit items-center gap-2 text-sm uppercase tracking-[0.25em] text-gray-400 transition hover:text-white"
+          className="group inline-flex w-fit items-center gap-2 text-sm uppercase tracking-[0.25em] text-gray-400 transition-all duration-300 hover:text-white hover:-translate-x-1"
         >
-          <span aria-hidden="true">←</span>
+          <span aria-hidden="true" className="transition-transform duration-300 group-hover:-translate-x-1">←</span>
           Back to Projects
         </Link>
 
@@ -42,7 +41,9 @@ const SkillNavigator = () => {
             <img
               src={SkillNavigatorImage}
               alt="Skill Navigator preview"
-              className="h-full w-full object-cover"
+              loading="lazy"
+              decoding="async"
+              className="h-full w-full object-cover transition-transform duration-500 ease-out hover:scale-[1.02]"
             />
           </div>
 
@@ -73,11 +74,29 @@ const SkillNavigator = () => {
           </div>
         </section>
 
+        {/* Project Pagination */}
+        <div className="flex items-center justify-between border-t border-b border-white/10 py-6 text-sm">
+          <Link
+            to="/project/AiChatBot"
+            className="group inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+          >
+            <span className="transition-transform duration-300 group-hover:-translate-x-1">←</span>
+            <span>AI Chat Assistant</span>
+          </Link>
+          <Link
+            to="/project/GraphicXStudio"
+            className="group inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+          >
+            <span>GraphicX Studio</span>
+            <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </Link>
+        </div>
+
         <section className="rounded-3xl flex flex-col justify-center items-center p-6 sm:p-8">
           <h2 className="mb-3 text-2xl font-light">Have a project in mind?</h2>
           <a
             href="mailto:Sanchitchaurasiya90@gmail.com"
-            className="text-lg text-[#8b5cf6] transition hover:text-[#a78bfa]"
+            className="text-lg text-[#8b5cf6] transition-colors duration-200 hover:text-[#a78bfa]"
           >
             Sanchitchaurasiya90@gmail.com
           </a>

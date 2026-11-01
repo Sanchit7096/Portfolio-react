@@ -116,12 +116,12 @@ function MenuItem({ link, text, image, speed, textColor, marqueeBgColor, marquee
 
   return (
     <div
-      className="flex-1 relative overflow-hidden text-center"
+      className="flex-1 relative overflow-hidden text-center transition-colors duration-300"
       ref={itemRef}
       style={{ borderTop: isFirst ? 'none' : `1px solid ${borderColor}` }}
     >
       <Link
-        className="flex items-center justify-center h-full relative cursor-pointer uppercase no-underline font-semibold text-[4vh]"
+        className="flex items-center justify-center h-full relative cursor-pointer uppercase no-underline font-semibold text-[4vh] transition-opacity duration-300 hover:opacity-80"
         to={link}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -139,7 +139,7 @@ function MenuItem({ link, text, image, speed, textColor, marqueeBgColor, marquee
             <div className="marquee-part flex items-center flex-shrink-0" key={idx} style={{ color: marqueeTextColor }}>
               <span className="whitespace-nowrap uppercase font-normal text-[4vh] leading-[1] px-[1vw]">{text}</span>
               <div
-                className="w-[250px] h-[12vh] my-[2em] mx-[2vw] py-[1em] rounded-[10px] bg-cover bg-contain bg-center bg-no-repeat "
+                className="w-[250px] h-[12vh] my-[2em] mx-[2vw] py-[1em] rounded-[10px] bg-cover bg-contain bg-center bg-no-repeat transition-transform duration-500 ease-out"
                 style={{ backgroundImage: `url(${image})` }}
               />
             </div>

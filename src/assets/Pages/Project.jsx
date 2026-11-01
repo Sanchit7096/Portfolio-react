@@ -1,4 +1,4 @@
-
+import { motion } from 'framer-motion';
 import FlowingMenu from "../Components/FlowingMenu";
 import Image1 from "../Images/GraphicXStudio.png"
 import Image2 from "../Images/Skillnavigator.png"
@@ -11,14 +11,21 @@ const demoItems = [
   { link: '/project/AiChatBot', text: 'AI Chat Assistant', image: Image3 },
   { link: '/project/Skillnavigator', text: 'Skill Navigator', image: Image2 },
 ];
+
 const Project = () => {
   return (
     <div id="projects" className="bg-[#120F17] h-[80vh] w-full overflow-x-hidden">
       <div className="p-4 sm:p-6 md:p-10">
-        <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-6 font-light   break-words">Selected Projects</h1>
+        <motion.h1 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+          viewport={{ once: true }}
+          className="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-6 font-light break-words"
+        >
+          Selected Projects
+        </motion.h1>
       </div>
-
-
 
       <div style={{ height: '450px', position: 'relative' }}>
         <FlowingMenu items={demoItems}

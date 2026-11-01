@@ -26,12 +26,12 @@ const Experience = () => {
   ]
 
   return (
-    <div className='bg-[#FFFBEB] min-h-[60vh] px-5 py-16 w-full'>
+    <div id="experience" className='bg-[#FFFBEB] min-h-[60vh] px-5 py-16 w-full'>
       <div className="max-w-7xl mx-auto">
         <motion.h1 
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
           viewport={{ once: true }}
           className='text-black text-5xl font-light mb-16'
         >
@@ -42,13 +42,13 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.id}
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.65, delay: index * 0.15, ease: [0.25, 0.1, 0.25, 1] }}
               viewport={{ once: true }}
-              className="border-l-2 border-gray-300 pl-8 relative"
+              className="border-l-2 border-gray-300 pl-8 relative transition-transform duration-300 hover:translate-x-0.5"
             >
-              <div className="absolute -left-3 top-0 w-6 h-6 bg-black rounded-full"></div>
+              <div className="absolute -left-3 top-0 w-6 h-6 bg-black rounded-full transition-transform duration-300 hover:scale-110"></div>
               <div className="mb-2">
                 <h2 className="text-2xl font-bold text-black">{exp.title}</h2>
                 <p className="text-lg text-gray-600">{exp.company}</p>
@@ -62,7 +62,7 @@ const Experience = () => {
                       href={exp.link} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-sm text-blue-600 hover:text-blue-800 underline"
+                      className="text-sm text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
                     >
                       {exp.link}
                     </a>
@@ -74,7 +74,7 @@ const Experience = () => {
                 {exp.technologies.map((tech, techIndex) => (
                   <span 
                     key={techIndex}
-                    className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                    className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full transition-colors duration-200 hover:bg-gray-200"
                   >
                     {tech}
                   </span>
